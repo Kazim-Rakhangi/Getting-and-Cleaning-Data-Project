@@ -1,0 +1,54 @@
+---
+title: "Getting & Cleaning Data Assignment"
+author: "Kazim"
+date: "15/08/2021"
+output: html_document
+---
+
+### Project: Cleaning & Getting Data Assignment.
+
+The purpose of this project is to demonstrate ability to collect, work with, and clean a data set.
+
+Data was collected from dowloaded & extracted from UCI HAR Dataset
+
+### Steps Followed to create tidy data set:
+
+1. Downloading of data from given url with download.file command and unzipping in with unzip command.
+
+2. create a list of file routes with file.path command so that it can be read by read.table command.
+
+3. Merging of data sets using rbind command.
+
+4. Extracting mean and standard deviations measurement using grep command.
+
+5. assigning descriptive names to variables using names & gsub command.
+
+6. creating second independent dataset using plyr library.
+
+7. Please refer run_analysis.R script of further details.
+
+### Details of variables are as follows;
+
+1. Values of Varible Activity consist of data from “Y_train.txt” and “Y_test.txt”.
+
+2. Values of Varible Subject consist of data from “subject_train.txt” and subject_test.txt".
+
+3. Values of Varibles Features consist of data from “X_train.txt” and “X_test.txt”.
+
+4. Names of Varibles Features come from “features.txt”
+levels of Varible Activity come from “activity_labels.txt”.
+
+Details of variables are below
+
+```{r}
+Data <- read.csv("D:/R Programming/Data.txt", sep="")
+str(Data)
+```
+```{r}
+```
+
+
+```{r}
+```
+
+
